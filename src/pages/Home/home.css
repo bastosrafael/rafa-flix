@@ -77,6 +77,7 @@
   }
 
   .lista-filmes img{
-    height: 380px;  /* ajusta a altura pro celular */
+    height: 450px;  /* ajusta a altura pro celular */
   }
 }
+
