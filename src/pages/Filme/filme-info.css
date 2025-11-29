@@ -1,0 +1,66 @@
+.filme-info{
+  margin: 0 auto;
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;      /* permite quebrar linha */
+  justify-content: center;
+  gap: 16px;            /* espaço entre os cards */
+  max-width: 900px;
+  padding: 0 8px;
+}
+
+/* cada bloco de filme */
+.filme-info > div {
+  flex: 0 0 calc(33.333% - 16px); /* 3 por linha */
+  box-sizing: border-box;
+}
+
+/* título dentro do card */
+.filme-info h1{
+  margin: 14px 0;
+}
+
+/* imagem dentro do card */
+.filme-info img{
+  border-radius: 8px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* resto do seu css pode continuar igual */
+.filme-info h3{
+  margin-top: 14px;
+}
+
+.filme-info span{
+  margin: 8px 0;
+}
+
+.area-buttons button {
+  margin-right: 12px;
+  margin-top: 14px;
+  margin-left: 0;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.area-buttons button:hover{
+  background-color: brown;
+  color: #FFF;
+}
+
+.area-buttons a{
+  text-decoration: none;
+  color:#000;
+  transition: all 0.5s;
+}
+
+.area-buttons a:hover{
+  color: #FFF;
+}
