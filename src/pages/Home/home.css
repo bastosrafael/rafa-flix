@@ -18,7 +18,7 @@
   flex-direction: column;
 }
 
-/* imagem + botão continuam iguais */
+/* imagem do card */
 .lista-filmes img{
   width: 100%;
   height: 500px;
@@ -42,10 +42,41 @@
 
 /* título do filme centralizado acima da imagem */
 .lista-filmes strong{
-  display: block;        /* ocupa a largura inteira do card */
-  width: 100%;           /* garante mesma largura da imagem */
+  display: block;
+  width: 100%;
   margin-bottom: 8px;
-  text-align: center;    /* centraliza o texto */
+  text-align: center;
   font-size: 18px;
 }
 
+/* --------- RESPONSIVO --------- */
+
+/* tablet: 2 cards por linha */
+@media (max-width: 900px){
+  .lista-filmes{
+    justify-content: center;
+  }
+
+  .lista-filmes article{
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  .lista-filmes img{
+    height: 420px;  /* opcional: um pouco menor no tablet */
+  }
+}
+
+/* celular: 1 card por linha */
+@media (max-width: 600px){
+  .lista-filmes{
+    justify-content: center;
+  }
+
+  .lista-filmes article{
+    flex: 0 0 100%;
+  }
+
+  .lista-filmes img{
+    height: 380px;  /* ajusta a altura pro celular */
+  }
+}
