@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 function Header(){
   return(
     <header>
-      <Link className="logo" to="/">Rafa Flix</Link>
+      <Link className="logo" to="/">Rafa Flix – Catálogo de Filmes</Link>
       <Link className="favoritos" to="/favoritos">Meus filmes</Link>
     </header>
   )
 }
+
 
 export default Header;
